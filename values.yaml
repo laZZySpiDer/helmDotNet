@@ -1,0 +1,10 @@
+mongodb:
+  image: mongo:latest
+  username: admin
+  password: admin-password
+
+redis:
+  image: redis:latest
+
+dotnet-service:
+  image: mcr.microsoft.com/dotnet/samples:dotnetapp
