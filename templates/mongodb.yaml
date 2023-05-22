@@ -14,14 +14,14 @@ spec:
     spec:
       containers:
         - name: mongodb
-          image: mongo:latest
+          image: {{ .Values.mongodb.image }}
           ports:
             - containerPort: 27017
           env:
             - name: MONGO_INITDB_ROOT_USERNAME
-              value: admin
+              value: {{ .Values.mongodb.username }}
             - name: MONGO_INITDB_ROOT_PASSWORD
-              value: admin-password
+              value: {{ .Values.mongodb.password }}
 ---
 apiVersion: v1
 kind: Service

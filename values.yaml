@@ -6,5 +6,6 @@ mongodb:
 redis:
   image: redis:latest
 
-dotnet-service:
-  image: mcr.microsoft.com/dotnet/samples:dotnetapp
+dotnetservice:
+  # image: mcr.microsoft.com/dotnet/samples:dotnetapp
+  image: dotnetweatherapp:2.0.0

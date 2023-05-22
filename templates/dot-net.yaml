@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: dotnet-service
-          image: mcr.microsoft.com/dotnet/samples:dotnetapp
+          image: {{ .Values.dotnetservice.image }}
           ports:
             - containerPort: 80
 ---
