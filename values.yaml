@@ -8,4 +8,4 @@ redis:
 
 dotnetservice:
   # image: mcr.microsoft.com/dotnet/samples:dotnetapp
-  image: lazzyspider/dotnetweatherapp:1.0.0
+  image: lazzyspider/dotnetweatherapp:3.0.4
